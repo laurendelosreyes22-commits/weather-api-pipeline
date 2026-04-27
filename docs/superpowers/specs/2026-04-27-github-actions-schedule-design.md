@@ -7,7 +7,7 @@
 
 ## Overview
 
-Schedule `weather.py` to run automatically once per day using GitHub Actions. The updated `weather_data.csv` is committed back to `main` after each successful run. The API key is moved out of source code and into GitHub Actions Secrets.
+Schedule `weather.py` to run automatically once per day using GitHub Actions. The updated `weather_data.csv` is committed back to `main` after each successful run. The API key remains hardcoded in `weather.py`.
 
 ---
 
@@ -15,7 +15,6 @@ Schedule `weather.py` to run automatically once per day using GitHub Actions. Th
 
 - Run the weather pipeline daily without manual intervention
 - Persist accumulated forecast data in the repo via git history
-- Keep the WeatherAPI key out of source code (repo is public)
 - Get notified of failures via GitHub's default email notification
 
 ---
@@ -26,13 +25,9 @@ Schedule `weather.py` to run automatically once per day using GitHub Actions. Th
 
 | File | Change |
 |------|--------|
-| `weather.py` | Replace hardcoded API key with `os.getenv("WEATHER_API_KEY")` |
 | `.github/workflows/weather.yml` | New file — defines the scheduled workflow |
 
-### GitHub Secret
-
-A secret named `WEATHER_API_KEY` must be added to the repo under:
-**Settings → Secrets and variables → Actions → New repository secret**
+`weather.py` is unchanged.
 
 ---
 
@@ -52,7 +47,7 @@ A secret named `WEATHER_API_KEY` must be added to the repo under:
 1. **Checkout repo** — `actions/checkout@v4`
 2. **Set up Python 3.13** — `actions/setup-python@v5`
 3. **Install dependencies** — `pip install -r requirements.txt`
-4. **Run pipeline** — `python weather.py` with `WEATHER_API_KEY` injected from secrets as an environment variable
+4. **Run pipeline** — `python weather.py`
 5. **Commit and push CSV** — only if `weather_data.csv` changed:
    - `git config` to set bot user name/email
    - `git add weather_data.csv`
@@ -73,21 +68,11 @@ The `[skip ci]` tag in the commit message prevents the push from re-triggering t
 
 ---
 
-## Security
-
-- The API key is removed from `weather.py` source code going forward
-- The key remains in git history (prior commits cannot be rewritten without force-push), but will no longer be used in future runs
-- The secret is only accessible to the workflow runner — not exposed in logs
-
----
-
 ## Implementation Approach
 
-Subagent-driven development. Tasks are independent and can be parallelized:
+Subagent-driven development. Only one code task:
 
-1. Patch `weather.py` to use `os.getenv("WEATHER_API_KEY")`
-2. Create `.github/workflows/weather.yml`
-3. Document the secret setup step for the user
+1. Create `.github/workflows/weather.yml`
 
 ---
 
@@ -95,4 +80,3 @@ Subagent-driven development. Tasks are independent and can be parallelized:
 
 - Workflow appears in the Actions tab and runs successfully on manual trigger
 - `weather_data.csv` is updated and a new commit appears on `main` after each run
-- No API key visible in `weather.py` source
