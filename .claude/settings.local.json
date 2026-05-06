@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "Skill(update-config)"
+      "Skill(update-config)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/Users/laurendelosreyes/isba-4715/weather-api-pipeline/.github/workflows/weather.yml'\\)\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('.github/workflows/weather.yml'\\)\\)\")",
+      "Bash(python3 -m pip install pyyaml)",
+      "Bash(git commit:*)",
+      "Bash(python3:*)",
+      "Bash(git:*)"
     ]
   }
 }
