@@ -43,6 +43,8 @@ for zip_code in zip_codes:
     }
 
     response = requests.get(api_url, params=params)
+    if not response.ok or not response.text:
+        raise RuntimeError(f"API request failed for {zip_code}: HTTP {response.status_code} — {response.text!r}")
     data = response.json()
 
     city = data["location"]["name"]
