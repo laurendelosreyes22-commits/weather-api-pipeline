@@ -1,1 +1,61 @@
-
+zip_code,city,date,max_temp_f,min_temp_f,condition
+90045,Los Angeles,2026-05-31,73.4,52.7,Sunny
+90045,Los Angeles,2026-06-01,72.0,62.8,Sunny
+90045,Los Angeles,2026-06-02,72.1,62.2,Sunny
+10001,New York,2026-05-31,77.4,47.1,Sunny
+10001,New York,2026-06-01,76.4,61.3,Patchy rain nearby
+10001,New York,2026-06-02,71.5,54.3,Sunny
+60601,Chicago,2026-05-31,67.5,58.5,Sunny
+60601,Chicago,2026-06-01,67.5,56.8,Partly Cloudy
+60601,Chicago,2026-06-02,67.0,56.6,Sunny
+98101,Seattle,2026-05-31,66.0,44.8,Sunny
+98101,Seattle,2026-06-01,71.2,43.4,Sunny
+98101,Seattle,2026-06-02,82.4,49.6,Sunny
+33101,Miami,2026-05-31,92.7,75.2,Moderate rain
+33101,Miami,2026-06-01,89.8,80.9,Patchy rain nearby
+33101,Miami,2026-06-02,91.5,81.9,Patchy rain nearby
+77001,Houston,2026-05-31,90.8,74.3,Sunny
+77001,Houston,2026-06-01,94.9,76.7,Partly Cloudy
+77001,Houston,2026-06-02,97.6,75.4,Moderate rain
+85001,Phoenix,2026-05-31,103.3,65.7,Sunny
+85001,Phoenix,2026-06-01,100.0,80.4,Overcast
+85001,Phoenix,2026-06-02,103.3,82.3,Sunny
+19101,Philadelphia,2026-05-31,74.8,50.2,Sunny
+19101,Philadelphia,2026-06-01,75.5,58.5,Sunny
+19101,Philadelphia,2026-06-02,75.3,53.9,Sunny
+78201,San Antonio,2026-05-31,92.1,72.7,Partly Cloudy
+78201,San Antonio,2026-06-01,92.8,71.9,Partly Cloudy
+78201,San Antonio,2026-06-02,91.3,73.0,Patchy rain nearby
+92101,San Diego,2026-05-31,77.4,56.1,Sunny
+92101,San Diego,2026-06-01,71.3,64.0,Partly Cloudy
+92101,San Diego,2026-06-02,71.4,62.4,Sunny
+75201,Dallas,2026-05-31,96.5,74.5,Sunny
+75201,Dallas,2026-06-01,97.1,76.9,Sunny
+75201,Dallas,2026-06-02,97.2,75.3,Moderate rain
+95101,San Jose,2026-05-31,84.6,49.3,Sunny
+95101,San Jose,2026-06-01,88.1,51.6,Sunny
+95101,San Jose,2026-06-02,84.2,50.4,Sunny
+78701,Austin,2026-05-31,94.1,72.3,Sunny
+78701,Austin,2026-06-01,93.9,71.9,Partly Cloudy
+78701,Austin,2026-06-02,95.0,71.7,Moderate rain
+30301,Atlanta,2026-05-31,75.0,68.2,Patchy rain nearby
+30301,Atlanta,2026-06-01,91.1,63.6,Sunny
+30301,Atlanta,2026-06-02,87.4,69.5,Patchy rain nearby
+28201,Charlotte,2026-05-31,75.7,56.8,Partly Cloudy
+28201,Charlotte,2026-06-01,84.2,64.8,Patchy rain nearby
+28201,Charlotte,2026-06-02,75.5,58.6,Patchy rain nearby
+43201,Columbus,2026-05-31,82.4,50.7,Sunny
+43201,Columbus,2026-06-01,73.9,55.2,Overcast
+43201,Columbus,2026-06-02,71.4,52.8,Sunny
+80201,Denver,2026-05-31,80.6,52.5,Sunny
+80201,Denver,2026-06-01,78.3,52.4,Patchy rain nearby
+80201,Denver,2026-06-02,86.1,53.0,Patchy rain nearby
+32801,Orlando,2026-05-31,90.4,74.8,Sunny
+32801,Orlando,2026-06-01,91.9,75.4,Patchy rain nearby
+32801,Orlando,2026-06-02,91.0,74.6,Moderate rain
+89101,Las Vegas,2026-05-31,99.9,65.5,Sunny
+89101,Las Vegas,2026-06-01,98.3,65.5,Sunny
+89101,Las Vegas,2026-06-02,99.9,68.7,Sunny
+37201,Nashville,2026-05-31,89.4,65.5,Patchy rain nearby
+37201,Nashville,2026-06-01,83.0,66.6,Patchy rain nearby
+37201,Nashville,2026-06-02,74.9,59.9,Sunny
